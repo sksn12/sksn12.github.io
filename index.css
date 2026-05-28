@@ -160,6 +160,29 @@ body[data-theme="light"] .metric-card:hover {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.15) var(--bg-secondary);
+}
+
+/* Custom Elegant Scrollbar for Premium Web Vibe (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 8px; /* 정교하고 미니멀한 두께 */
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  border: 2px solid var(--bg-secondary); /* 슬림 캡슐 모양 구현을 위한 트랙 간격 */
+  transition: var(--transition-smooth);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent); /* 호버 시 에메랄드/테마 포인트 컬러 적용 */
 }
 
 html {
